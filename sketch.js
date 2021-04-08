@@ -66,12 +66,12 @@ function draw() {
   //display the paricles 
 
   if (frameCount% 60 === 0){
-    particles.push(new Particle(random(width/2 -500,width/2 +500),15,15))
+    particle.push(new Particle(random(width/2 -500,width/2 +500),15,15))
     score++;
   }
 
-  for (var i = 0; i<particles.length; i++){
-    particles[i].display();
+  for (var i = 0; i<particle.length; i++){
+    particle[i].display();
   }
   ground.display();
   
